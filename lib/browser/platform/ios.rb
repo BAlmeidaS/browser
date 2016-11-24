@@ -2,7 +2,7 @@
 module Browser
   class Platform
     class IOS < Base
-      MATCHER = /(iPhone|iPad|iPod)/
+      MATCHER = /(iPhone|iPad|iPod|iOS)/
       VERSION_MATCHER = /OS ([\d.]+)/
 
       def version

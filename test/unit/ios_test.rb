@@ -110,6 +110,11 @@ class IosTest < Minitest::Test
     refute browser.platform.ios?(7)
   end
 
+  test "returns string representation for ios alamofire" do
+    browser = Browser.new(Browser["IOS_ALAMOFIRE"])
+    assert browser.platform.ios?
+  end
+
   test "returns string representation for iphone" do
     browser = Browser.new(Browser["IPHONE"])
     meta = browser.to_s
